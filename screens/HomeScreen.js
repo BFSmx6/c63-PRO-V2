@@ -8,7 +8,7 @@ export default class HomeScreen extends Component{
       text: '',
       isSearchPressed: false,
       isLoading: false,
-      word  : "Loading...",
+      word  : "Cargando...",
       lexicalCategory :'',
       definition : ""
     };
@@ -68,7 +68,7 @@ export default class HomeScreen extends Component{
         <Header
           backgroundColor={'purple'}
           centerComponent={{
-            text: 'Pocket Dictionary',
+            text: 'Diccionario de bolsillo',
             style: { color: '#fff', fontSize: 20 },
           }}
         />
@@ -80,7 +80,7 @@ export default class HomeScreen extends Component{
               this.setState({
                 text: text,
                 isSearchPressed: false,
-                word  : "Loading...",
+                word  : "-cargando...",
                 lexicalCategory :'',
                 examples : [],
                 definition : ""
